@@ -75,33 +75,6 @@ header .botoes a:hover {
     color: #555;
 }
 
-#code{
-    margin-left: 580px;
-    margin-top: 1px;
-    position: absolute;
-    font-size: 20px;
-    align-items: center;
-    z-index: 1;
-}
-
-i {
-    margin-left: 250px;
-    margin-top: 1px;
-    position: absolute;
-    font-size: 25px;
-    align-items: center;
-    z-index: 1;
-}
-
-#trello{
-    margin-left: 455px;
-    margin-top: 1px;
-    position: absolute;
-    font-size: 25px;
-    align-items: center;
-    z-index: 1;
-}
-
 #about ul {
     list-style-type: none;
     padding: 0;
