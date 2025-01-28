@@ -1,21 +1,22 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Kanit:wght@300;400;500&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #f4f4f4;
 }
-
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 40px 20px;
+    background-color: #0033A0;
+    color: white;
+    border-bottom: 3px solid #FFD700;
 }
 
 header img {
@@ -28,80 +29,140 @@ header img {
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
-header p {
-    margin: 10px 0;
-    color: #555;
+header h1 span {
+    color: #cacac6;
 }
 
-.botoes {
+header .botoes {
     display: flex;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.botoes a {
+header .botoes a {
     text-decoration: none;
     color: white;
     background-color: #0033A0;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.botoes a:hover {
+header .botoes a:hover {
     background-color: #0059ff;
-}
-
-#about{
-    margin-top: 200px;
-    padding: 10px;
-    background: rgb(193, 193, 194);
-}
-#about > h2{
-    text-align: center;
-}
-#about > p{
-    text-align: justify;
-    line-height: 25px;
+    transform: scale(1.05);
 }
 
 .section {
-    padding: 3rem 1rem;
-    background: #f9f9f9;
-    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-  
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+#code{
+    margin-left: 580px;
+    margin-top: 1px;
+    position: absolute;
+    font-size: 20px;
+    align-items: center;
+    z-index: 1;
+}
+
+i {
+    margin-left: 250px;
+    margin-top: 1px;
+    position: absolute;
+    font-size: 25px;
+    align-items: center;
+    z-index: 1;
+}
+
+#trello{
+    margin-left: 455px;
+    margin-top: 1px;
+    position: absolute;
+    font-size: 25px;
+    align-items: center;
+    z-index: 1;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
 .project-grid {
-   display: flex;
+    display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
-  
+
 .project-card {
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
-    border-radius: 5px;
-    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
     width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4; 
+.project-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.section h2 {
-    font-size: 2rem;
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 0 0 15px;
+    color: #0033A0;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
     margin-bottom: 20px;
-    color: #0033A0; 
 }
 
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0033A0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0059ff;
+}
 
 .contact-links {
     display: flex;
@@ -114,11 +175,10 @@ header p {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    text-decoration: none;
     font-size: 1.2rem;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
 }
 
 .contact-btn i {
@@ -134,7 +194,6 @@ header p {
     background-color: #005582;
 }
 
-
 .contact-btn.github {
     background-color: #333;
     color: white;
@@ -143,4 +202,3 @@ header p {
 .contact-btn.github:hover {
     background-color: #000;
 }
-
