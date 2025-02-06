@@ -43,6 +43,7 @@ header .botoes {
     margin-top: 20px;
 }
 
+
 header .botoes a {
     text-decoration: none;
     color: white;
@@ -91,6 +92,37 @@ header .botoes a:hover {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+.texto{
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(80, end);
+}
+
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+.botoes{
+    animation: pulse 1.5s infinite alternate;
 }
 
 .project-card {
